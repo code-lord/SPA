@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Spa</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Profile</item>
+        <item>Find Spa</item>
+        <item>Make Appointment</item>
+        <item>View Appointment</item>
+        <item>Notifications</item>
+        <item>Send Gift Card</item>
+        <item>Logout</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/home</item>
+        <item>@drawable/user</item>
+        <item>@drawable/search</item>
+        <item>@drawable/make_appointment</item>
+        <item>@drawable/view_appointment</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/gift_card</item>
+        <item>@drawable/logout</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_set_therapist">See Your Therapist</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_see_apointment">See Apointment</string>
+    <string name="title_activity_send_feedback">Send Feedback</string>
+
+</resources>

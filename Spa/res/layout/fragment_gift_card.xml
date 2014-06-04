@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/Friend_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_default_bg"
+                android:drawableLeft="@drawable/user"
+                android:hint="Friend&apos;s Name"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:textColorHint="#bbbbbb" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/Friend_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/email"
+                android:hint="Friend&apos;s Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColorHint="#bbbbbb" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/Friend_Mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/contact_number"
+                android:hint="Friend&apos;s  Contact Number"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColorHint="#bbbbbb" >
+            </EditText>
+
+            <Button
+                android:id="@+id/ButtonController_SendGiftCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_default_bg"
+                android:text="Send Gift Card" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

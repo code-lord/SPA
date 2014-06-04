@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_default_bg"
+                android:drawableLeft="@drawable/user"
+                android:hint="User Name"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:textColorHint="#bbbbbb" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/password"
+                android:hint="Password"
+                android:imeOptions="actionDone"
+                android:padding="10dp"
+                android:password="true"
+                android:textColorHint="#bbbbbb" />
+
+            <EditText
+                android:id="@+id/Password_Conform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/password"
+                android:hint="Password Conform"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:password="true"
+                android:textColorHint="#bbbbbb" />
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/user"
+                android:hint="Name"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:textColorHint="#bbbbbb" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/Mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/contact_number"
+                android:hint="Contact Number"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColorHint="#bbbbbb" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/email"
+                android:hint="Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColorHint="#bbbbbb" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/address"
+                android:hint="Address"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="#bbbbbb" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/DOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/calender"
+                android:hint="Date Of Birth"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="#bbbbbb" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/Anniversary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/calender"
+                android:hint="Date Of Anniversary"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="#bbbbbb" >
+            </EditText>
+
+            <Button
+                android:id="@+id/Sign_Up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_default_bg"
+                android:text="Sign Up" />
+
+            <Button
+                android:id="@+id/AlreadyHaveAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_default_bg"
+                android:text="Already Have Account" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

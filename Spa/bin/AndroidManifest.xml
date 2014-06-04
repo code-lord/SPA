@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.mdcconcepts.androidapp.spa"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Permission to write to external storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.mdcconcepts.androidapp.spa.signup.SignUpActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="org.mdcconcepts.androidapp.spa.login.LoginActivity"
+            android:label="Login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.mdcconcepts.androidapp.spa.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="org.mdcconcepts.androidapp.spa.makeappointment.SetTherapistActivity"
+            android:label="@string/title_activity_set_therapist"
+            android:parentActivityName="MakeAppointmentFragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.mdcconcepts.androidapp.spa.MainActivity" />
+        </activity>
+
+        <service
+            android:name="org.mdcconcepts.androidapp.spa.notification.MyAlarmService"
+            android:enabled="true" />
+
+        <receiver android:name="org.mdcconcepts.androidapp.spa.notification.MyReceiver" />
+
+        <activity
+            android:name="org.mdcconcepts.androidapp.spa.viewappointment.SeeApointmentActivity"
+            android:label="@string/title_activity_see_apointment" >
+        </activity>
+        <activity
+            android:name="org.mdcconcepts.androidapp.spa.makeappointment.SendFeedbackActivity"
+            android:label="@string/title_activity_send_feedback" >
+        </activity>
+    </application>
+
+</manifest>
