@@ -50,6 +50,8 @@ public class LoginActivity extends Activity {
 	// Connection detector class
 	ConnectionDetector cd;
 
+	int pallavi;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
